@@ -1,0 +1,9 @@
+{
+    "name": "Discord 9x",
+    "description": "Discord but Windows 9x",
+    "version": "1.0.0",
+    "author": "Yellowsink#8156",
+    "theme": "discord-9x.theme.scss",
+    "consent": ["ext_listing"],
+    "license": "-"
+}

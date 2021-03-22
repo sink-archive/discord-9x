@@ -1,0 +1,149 @@
+$button-selector: ".app-2rEoOp button:not(.button-14-BFJ):not(.rtcConnectionStatusLabel-1wk4tH)";
+
+/* Shamelessly stolen font faces */
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url(https://jdan.github.io/98.css/ms_sans_serif.woff) format("woff");
+  src: url(https://jdan.github.io/98.css/ms_sans_serif.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url(https://jdan.github.io/98.css/ms_sans_serif_bold.woff) format("woff");
+  src: url(https://jdan.github.io/98.css/ms_sans_serif_bold.woff2)
+	format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Perfect DOS VGA 437 Win";
+  src: url(https://jdan.github.io/XP.css/PerfectDOSVGA437Win.woff)
+	format("woff");
+  src: url(https://jdan.github.io/XP.css/PerfectDOSVGA437Win.woff2)
+	format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --discord9x-title-gradient: linear-gradient(90deg, navy, #1084d0);
+  --discord9x-title-height: 20px;
+
+  --background-primary: silver;
+  --background-secondary: var(--background-primary);
+  --background-secondary-alt: var(--background-secondary);
+  --background-tertiary: var(--background-primary);
+
+  --channels-default: black;
+}
+
+body {
+  font-family: "Pixelated MS Sans Serif";
+  font-size: 11px;
+}
+
+#app-mount {
+  height: calc(100% - 6px);
+  width: calc(100% - 6px);
+
+  padding: 3px;
+  &,
+  .bg-h5JY_x {
+	background-color: silver;
+  }
+
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf,
+	inset -2px -2px grey, inset 2px 2px #fff;
+}
+
+.typeWindows-1za-n7 {
+  height: var(--discord9x-title-height);
+  padding: 3px 2px 3px 3px;
+  margin: 0;
+  background: var(--discord9x-title-gradient);
+}
+
+.winButton-iRh8-Z {
+  svg {
+	visibility: hidden;
+  }
+
+  &,
+  &:hover {
+	background-color: silver;
+  }
+
+  margin-top: calc((var(--discord9x-title-height) - 14px) / 2);
+  height: 14px;
+  width: 16px;
+  background: silver;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey,
+	inset 2px 2px #dfdfdf;
+  top: 0;
+  cursor: unset;
+
+  background-repeat: no-repeat;
+}
+
+.winButtonClose-1HsbF- {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E");
+  background-position: top 3px left 4px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.winButtonMinMax-PBQ2gm:last-child {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E");
+  background-position: bottom 3px left 4px;
+}
+
+.winButtonMinMax-PBQ2gm:nth-last-child(2) {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E");
+  background-position: top 2px left 3px;
+}
+
+[vz-window="maximized"] .winButtonMinMax-PBQ2gm:nth-last-child(2) {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M2 0h6v2H2zM7 2h1v4H7zM2 2h1v1H2zM6 5h1v1H6zM0 3h6v2H0zM5 5h1v4H5zM0 5h1v4H0zM1 8h4v1H1z'/%3E%3C/svg%3E");
+}
+
+.wordmarkWindows-1v0lYD {
+  path {
+	fill: white;
+  }
+  top: calc((var(--discord9x-title-height) - 16px + 3px) / 2);
+}
+
+.channelTextArea-rNsIhG,
+.scrollableContainer-2NUZem {
+  border-radius: 0;
+}
+
+.scrollableContainer-2NUZem {
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf,
+	inset 2px 2px #0a0a0a;
+}
+
+.embedWrapper-lXpS3L {
+  background-color: white;
+}
+
+.titleBar-AC4pGV {
+  .wordmark-2iDDfm {
+	&::before {
+	  visibility: visible;
+	  position: absolute;
+	  content: "Discord";
+	  color: white;
+	  font-size: 16px;
+	}
+	visibility: hidden;
+  }
+}
+
+img {
+	// make the images look crispy™
+	image-rendering: pixelated;
+}
